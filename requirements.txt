@@ -7,6 +7,6 @@ jsonlines
 libclang
 tree_sitter
 tree_sitter_cpp
-requests==2.27.1
+requests==2.32.4
 lark
 # flash-attn==1.0.4 # Depends on the GPU and CUDA version
