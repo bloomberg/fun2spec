@@ -1,0 +1,201 @@
+Function Name, Postcondition, true, false
+getTraceBufferLength,  res_tmp >= specifiedMaxRecordedFrames && res_tmp % k_PTRS_PER_MAX == 0, 362, 0
+checkBlockHeader,  res_tmp == 0 || res_tmp == -1, 208473, 0
+allocationLimit,  true, 209275, 0
+resolve,  res_tmp == -1, 0, 0
+operator(),  res_tmp >= 0, 2, 0
+getIdentifierOctets,  true, 61, 0
+getIdentifierOctets,  res_tmp == 0 || res_tmp == -1, 61, 0
+putIdentifierOctets,  res_tmp == 0 || res_tmp == -1, 61, 0
+getNumOctetsToStream,  res_tmp >= 1, 26, 0
+startPos,  res_tmp >= 0, 129, 0
+logError,  true, 90, 0
+parseBoolean,  res_tmp == BAEXML_SUCCESS || res_tmp == BAEXML_FAILURE, 18, 0
+parseDoubleImpl,  res_tmp == 0 || res_tmp == -1, 474, 0
+parseDouble,  res_tmp == 0 || res_tmp == -1, 474, 0
+parseInt,  res_tmp == 0 || res_tmp == -1, 251, 0
+parseUnsignedInt,  res_tmp == BAEXML_SUCCESS || res_tmp == BAEXML_FAILURE, 48, 0
+parseDecimal64Impl,  res_tmp == BAEXML_SUCCESS || res_tmp == BAEXML_FAILURE, 170, 0
+parse,  res_tmp == 0 || res_tmp == -1, 14177, 0
+unicodeToUtf8,  res_tmp >= 0, 11, 0
+setError,  res_tmp == 0 || res_tmp == -1, 1674, 0
+skipSpaces,  res_tmp == 0 || res_tmp != 0, 8631, 0
+pushPrefix,  res_tmp == -1 || res_tmp >= 0, 28, 0
+lookupNamespaceId,  true, 27, 0
+doOpen,  res_tmp == 0 || res_tmp != 0, 5107, 0
+getFormatterInitialIndentLevel,  res_tmp == 0 || res_tmp == options.initialIndentLevel(), 735, 0
+lookupPredefinedId, e_PREDEF_MIN, 0, 0
+encodeCharArray,  true, 650, 0
+decodeObject,  res_tmp == 0 || res_tmp == -1 || res_tmp == -2 || res_tmp == -3 || res_tmp == -4, 1137, 0
+decodeArray,  res_tmp == -4 || res_tmp == -1 || res_tmp == -2 || res_tmp == 0, 3002, 0
+extractValue,  res_tmp == 0 || res_tmp == -1, 1646, 0
+encodeArray,  res_tmp == 0 || res_tmp != 0, 466, 0
+encodeObject,  true, 599, 0
+decode,  res_tmp == 0 || res_tmp == -1 || res_tmp == -2 || res_tmp == -3, 1719, 0
+getUnquotedString,  true, 105, 0
+fromAsciiCaseless,  res_tmp == BALL_SUCCESS || res_tmp == BALL_FAILURE, 87, 0
+getRecordPtr,  res_tmp != NULL, 118749, 0
+format,  res_tmp == -1 || res_tmp >= 0, 1753, 0
+hash,  0 <= res_tmp && res_tmp < size, 69, 0
+deregisterObserver,  res_tmp == 0 || res_tmp == 1, 25, 0
+findObserver,  res_tmp == nullptr || res_tmp != nullptr, 50, 0
+getDefaultFormat,  !res_tmp.empty(), 0, 0
+parse,  res_tmp == 0 || res_tmp == -1, 7059, 0
+setFormat,  true, 71333, 0
+fromAscii,  res_tmp == 0 || res_tmp == -1, 45, 0
+setLevels,  res_tmp == 0 || res_tmp == -1, 0, 0
+hash,  0 <= res_tmp && res_tmp < size, 134790, 0
+addCategory,  res_tmp == 0 || res_tmp == 1, 45, 0
+defaultRecordBufferSize,  true, 7, 0
+hash,  res_tmp >= 0 && res_tmp < size, 906466, 0
+getErrorCode,  true, 3, 0
+getTimestampSuffix,  res_tmp.length() == 16, 0, 25
+openLogFile,  res_tmp == 0 || res_tmp == -1, 41, 0
+computeNextRotationTime,  true, 20, 0
+addRule,  true, 302533, 0
+ruleId,  res_tmp == -1 || res_tmp >= 0, 9, 0
+hash,  res_tmp < size, 61, 0
+addCollector,  res_tmp == 0 || res_tmp == 1, 19, 0
+getZoneinfoId,  res_tmp == 0 || res_tmp == -1, 108, 0
+lookupTimeZone,  (res_tmp == 0 && *timeZone != 0) || (res_tmp != 0 && *timeZone == 0), 146, 0
+findTransitionWithDstFlag,  res_tmp != timeZone.endTransitions() || res_tmp == timeZone.endTransitions(), 54, 0
+convertUtcToLocalTime,  true, 55, 311
+configureImp,  true, 85, 0
+validateTimeZoneId,  res_tmp == 0 || res_tmp == -1 || res_tmp == -2, 403, 0
+loadTimeZoneImpl,  true, 13, 0
+loadTimeZoneFilePath,  true, 145, 0
+readRawTz,  res_tmp == -1 || res_tmp == -2 || res_tmp == 0, 427, 0
+decode32,  true, 12608, 0
+readHeader,  res_tmp == 0 || res_tmp < 0, 1290, 0
+readVersion2Or3FormatData,  true, 435, 0
+read,  true, 378, 0
+convertUtcToLocalTime, k_OUT_OF_RANGE, 0, 0
+addInterval,  true, 14, 0
+constraint,  res_tmp.use_count() >= 0, 24714, 0
+validate,  res_tmp >= -3 && res_tmp <= 14, 1740295, 0
+parseEnvironmentVariable,  res_tmp >= 0 || res_tmp == -1, 223, 0
+findName,  res_tmp >= -1, 5924, 378549
+index,  res_tmp >= -1, 19816, 0
+calculateNumberOfUnitsToDrain,  true, 16948479, 0
+calculateTimeToSubmit,  res_tmp >= 0, 386510, 0
+registerHandler,  res_tmp == 0 || res_tmp == 1, 75, 0
+calculateTimeToSubmit,  res_tmp >= 0, 752, 0
+addGeneralPublisher,  res_tmp == 0 || res_tmp == -1, 345, 0
+registerCollectionCallback,  res_tmp >= 0, 124816, 0
+registerCollectionCallback,  res_tmp != NULL, 0, 2
+setFormat,  res_tmp == 0 || res_tmp == -1, 50, 0
+insertId,  true, 3219, 0
+numMetrics,  res_tmp >= 0, 104, 0
+makeInvalidInterval, TimeInterval(0$ 0), 0, 0
+calculateNextBufferSize,  res_tmp >= size && (res_tmp <= d_maxBufferSize || res_tmp == d_maxBufferSize), 0, 0
+absLevel,  true, 115, 0
+getNumDeletes,  res_tmp == s_numDeletes, 0, 0
+getNumDeletes,  true, 0, 0
+getProcessName,  res_tmp == 0 || res_tmp == -1, 0, 0
+compare,  true, 0, 0
+getComponentName,  res_tmp == 0 || res_tmp == -1 || res_tmp == -2 || res_tmp == -3, 0, 0
+vsnprintf_alwaysCount,  res_tmp >= 0, 0, 0
+vsnprintf_allocate,  res_tmp >= 0 || res_tmp < 0, 0, 0
+lagTime,  res_tmp >= 0, 76, 0
+convertToSchedulingPriority,  true, 15, 0
+addThreadGroup,  true, 41, 0
+nativeDefaultThreadStackSizeImp,  1 <= res_tmp && res_tmp <= INT_MAX, 0, 0
+currentCount,  true, 14980, 0
+message,  true, 0, 0
+message,  true, 0, 0
+rotl,  (res_tmp >> b) | (res_tmp << (64 - b)) == x, 0, 0
+u8to64_le,  true, 0, 0
+rawLt64,  res_tmp == (static_cast<uint64_t>(1) << numBits) - 1, 1714, 0
+bound,  res_tmp == value || res_tmp == low || res_tmp == high, 11573641, 0
+divmod10,  res_tmp >= 0 && res_tmp <= 9, 1675598, 0
+canonicalizeDecimalValueClassification,  res_tmp == FP_NAN || res_tmp == FP_INFINITE || res_tmp == FP_ZERO || res_tmp == FP_NORMAL || res_tmp == FP_SUBNORMAL || res_tmp == -1, 0, 0
+getNewCapacity,  res_tmp >= length && res_tmp >= capacity, 342, 0
+getNewCapacity,  res_tmp >= size, 70, 0
+getNewCapacity,  res_tmp >= size, 39, 0
+getNewCapacity,  res_tmp >= size && res_tmp >= 1, 42, 0
+calculateMaxAlignedSize, BSLS_MAX_ALIGNMENT == 0, 0, 0
+roundUp,  res_tmp % y == 0, 258, 0
+alignedAllocationSize,  res_tmp >= 0, 43432, 0
+initAlwaysUnavailable,  true, 53600, 0
+expand,  true, 61, 0
+roundUp,  res_tmp >= x && res_tmp % y == 0, 1321, 0
+computeInternalBlockSize,  true, 1321, 0
+getSystemPageSize,  res_tmp > 0, 24239, 0
+systemProtect,  true, 12121, 0
+systemUnprotect,  true, 12118, 0
+findPool,  true, 89424, 0
+alignedAllocationSize,  res_tmp >= 0, 180, 0
+alignedAllocationSize, BSLS_MAX_ALIGNMENT == 0, 0, 0
+findPool,  true, 84775, 0
+fileSize,  res_tmp >= 0, 421, 0
+switchToInputMode,  res_tmp == 0 || res_tmp == -1, 341, 0
+underflow,  true, 351, 0
+appendIfValid,  true, 4209, 0
+makeCanonicalName,  true, 2, 0
+substr,  true, 7625, 0
+getProcessId,  res_tmp > 0, 924, 0
+makeDirectory,  res_tmp == 0 || res_tmp < 0, 0, 0
+u_removeContentsOfTree,  res_tmp == 0 || res_tmp == -2 || res_tmp == -7 || res_tmp == -9 || res_tmp == -10 || res_tmp == -11, 589, 0
+getPid,  true, 36, 0
+getProcessId,  true, 36, 0
+convert,  true, 8097, 0
+f1,  true, 4006272, 0
+f1,  true, 2506800, 0
+f2,  true, 4006272, 0
+f2,  true, 2506800, 0
+f3,  true, 3004704, 0
+f3,  true, 2005440, 0
+f4,  true, 3004704, 0
+f4,  true, 2005440, 0
+convert,  res_tmp == 0 || res_tmp == -1 || res_tmp == -2, 65825, 0
+getLengthInUse,  res_tmp >= 0 && res_tmp < 64, 793753, 0
+setSeekFailure,  res_tmp == -1, 9, 0
+overflow, eof(), 0, 0
+rotateLeft,  true, 7018368, 0
+bitwiseConditional,  true, 626640, 0
+bitwiseMajority,  true, 626640, 0
+f,  true, 2506560, 0
+pack,  true, 501312, 0
+utf8ToUcs2,  res_tmp == k_SUCCESS || res_tmp == k_OUTPUT_BUFFER_TOO_SMALL || res_tmp == (k_SUCCESS | k_OUTPUT_BUFFER_TOO_SMALL), 657391, 9540520
+compare,  true, 0, 0
+utf8Size,  res_tmp == 1 || res_tmp == 2 || res_tmp == 3 || res_tmp == 4, 236227, 0
+get2ByteValue,  true, 15294424, 0
+get3ByteValue,  res_tmp >= 0 && res_tmp <= 16777215, 12911972, 0
+get4ByteValue,  res_tmp >= 0 && res_tmp <= 2097151, 19237733, 0
+validateAndCountCodePoints,  res_tmp >= 0 || res_tmp == k_UNEXPECTED_CONTINUATION_OCTET || res_tmp == k_NON_CONTINUATION_OCTET || res_tmp == k_END_OF_INPUT_TRUNCATION || res_tmp == k_OVERLONG_ENCODING || res_tmp == k_SURROGATE || res_tmp == k_INVALID_INITIAL_OCTET || res_tmp == k_VALUE_LARGER_THAN_0X10FFFF, 667859, 0
+validateAndCountCodePoints,  res_tmp >= 0 || res_tmp == k_UNEXPECTED_CONTINUATION_OCTET || res_tmp == k_NON_CONTINUATION_OCTET || res_tmp == k_OVERLONG_ENCODING || res_tmp == k_SURROGATE || res_tmp == k_INVALID_INITIAL_OCTET || res_tmp == k_END_OF_INPUT_TRUNCATION || res_tmp == k_VALUE_LARGER_THAN_0X10FFFF, 10233956, 0
+getLineAndColumnNumber,  res_tmp == 0 || res_tmp <= -100, 479, 0
+lookaheadContinuations,  res_tmp <= n, 378665, 0
+endConvert,  res_tmp == -1 || res_tmp == 0, 1036, 0
+numActiveThreads,  res_tmp >= 0, 52, 0
+advanceTime,  res_tmp >= amount, 4, 0
+currentTime,  true, 15, 0
+start,  true, 87, 0
+nextPendingEventTime,  true, 21, 0
+advanceTime,  true, 4, 0
+now,  true, 3, 0
+enqueueJob,  true, 22474, 0
+start,  res_tmp == 0 || res_tmp == -1, 129, 0
+createQueue,  res_tmp >= 0, 7549, 0
+invalidThreadId,  true, 228, 0
+advanceTime,  res_tmp >= amount, 16, 0
+currentTime,  res_tmp == d_currentTime, 36, 0
+returnZero,  res_tmp == 0, 98, 0
+chooseNextEvent,  true, 2258, 0
+cancelEvent, e_INVALID, 0, 0
+advanceTime,  res_tmp >= amount, 16, 0
+now,  true, 5, 0
+nextPermit,  res_tmp == 0 || res_tmp == -1, 62, 0
+readUnquotedString,  res_tmp == 0 || res_tmp == -1, 262, 12
+findFirstNonDigit,  res_tmp >= begin && res_tmp <= end, 199381, 0
+expandBufferForLargeValue,  res_tmp == 0 || res_tmp == -1, 3153, 0
+advanceToNextToken,  res_tmp == 0 || res_tmp == -1, 88408, 0
+value,  res_tmp == 0 || res_tmp == -1, 1612, 0
+readObject,  res_tmp == 0 || res_tmp < 0, 520, 0
+readArray,  res_tmp == 0 || res_tmp == -1 || res_tmp == -4, 1621, 1
+readScalar,  res_tmp == 0 || res_tmp == -1, 873, 0
+read,  res_tmp == 0 || res_tmp == -1, 788, 35
+circularDifference,  res_tmp >= -static_cast<int>(modulo / 2) && res_tmp <= static_cast<int>(modulo / 2), 653589, 5300
+reservePushIndex,  res_tmp == e_SUCCESS || res_tmp == e_QUEUE_FULL || res_tmp == e_DISABLED_QUEUE, 1763078, 0
+length,  res_tmp == 0 || res_tmp <= d_capacity, 2403520, 0
+charToHex,  res_tmp == 0 || res_tmp == -1, 0, 0

@@ -1,0 +1,10 @@
+Function Name, Postcondition, true, false
+allocate,  res_tmp != NULL, 0, 0
+deallocate,  (d_buffer_p <= address && address < d_buffer_p + d_bufferSize) || d_allocator_p->deallocate(address), 0, 0
+operator<<,  res_tmp == stream, 0, 0
+operator<<,  res_tmp == stream, 0, 0
+getTraceBufferLength,  res_tmp >= specifiedMaxRecordedFrames, 362, 0
+checkBlockHeader,  res_tmp == -1, 254, 208219
+failAbort,  true, 0, 0
+allocate,  res_tmp != NULL, 0, 0
+allocationLimit,  true, 209275, 0

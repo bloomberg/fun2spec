@@ -1,0 +1,1 @@
+[("Reasoning:\nLet's think about this step by step. The function sets the session to the given value and returns a reference to the current instance. Since the function returns a reference to the current instance, the returned reference should point to the same address as the current instance.\nPostcondition:\nPOST(&res_tmp == this)\n\n------", 0)]

@@ -1,0 +1,82 @@
+Function Name, Postcondition, true, false
+getTraceBufferLength,  res_tmp >= specifiedMaxRecordedFrames && res_tmp % k_PTRS_PER_MAX == 0, 362, 0
+checkBlockHeader,  res_tmp == -1 || res_tmp == 0, 208473, 0
+allocationLimit,  true, 209275, 0
+resolve,  res_tmp == -1, 0, 0
+getIdentifierOctets,  res_tmp == 0 || res_tmp == -1, 61, 0
+putIdentifierOctets,  res_tmp == 0 || res_tmp == -1, 61, 0
+getNumOctetsToStream,  res_tmp > 0, 26, 0
+startPos,  res_tmp >= 0, 129, 0
+parseBoolean,  res_tmp == BAEXML_SUCCESS || res_tmp == BAEXML_FAILURE, 18, 0
+parseDoubleImpl,  res_tmp == 0 || res_tmp == -1, 474, 0
+parseDouble,  true, 474, 0
+parseInt,  res_tmp == BAEXML_SUCCESS || res_tmp == BAEXML_FAILURE, 251, 0
+parseUnsignedInt,  res_tmp == BAEXML_SUCCESS || res_tmp == BAEXML_FAILURE, 48, 0
+parseDecimal64Impl,  res_tmp == BAEXML_SUCCESS || res_tmp == BAEXML_FAILURE, 170, 0
+parse,  res_tmp == BAEXML_SUCCESS || res_tmp == BAEXML_FAILURE, 14177, 0
+unicodeToUtf8,  res_tmp >= 0, 11, 0
+setError,  res_tmp == 0 || res_tmp == -1, 1674, 0
+skipSpaces,  res_tmp == 0 || !isspace(res_tmp), 547174, 0
+pushPrefix,  true, 28, 0
+doOpen,  res_tmp == 0 || res_tmp != 0, 5107, 0
+getFormatterInitialIndentLevel,  res_tmp == 0 || res_tmp == options.initialIndentLevel(), 735, 0
+lookupPredefinedId, e_PREDEF_MIN, 0, 0
+decodeObject,  res_tmp == 0 || res_tmp < 0, 1137, 0
+decodeArray,  res_tmp == 0 || res_tmp == -1 || res_tmp == -2 || res_tmp == -4, 3002, 0
+extractValue,  res_tmp == 0 || res_tmp == -1, 1646, 0
+decode,  res_tmp == 0 || res_tmp == -1 || res_tmp == -2 || res_tmp == -3, 1719, 0
+fromAsciiCaseless,  res_tmp == BALL_SUCCESS || res_tmp == BALL_FAILURE, 87, 0
+getRecordPtr,  res_tmp != NULL, 118749, 0
+format,  res_tmp == -1 || (res_tmp >= 0 && res_tmp < numBytes), 1999, 0
+hash,  res_tmp == rule.d_hashValue, 22279, 1
+deregisterObserver,  res_tmp == 0 || res_tmp == 1, 25, 0
+findObserver,  res_tmp.use_count() == 0 || res_tmp.use_count() > 0, 50, 0
+getDefaultFormat,  res_tmp.size() > 0, 0, 0
+parse,  res_tmp == 0 || res_tmp == -1, 7059, 0
+setFormat,  true, 71333, 0
+fromAscii,  res_tmp == 0 || res_tmp == -1, 45, 0
+setLevels,  res_tmp == 0 || res_tmp == -1, 0, 0
+hash,  res_tmp < size, 134790, 0
+hash,  0 <= res_tmp && res_tmp < size, 906466, 0
+getTimestampSuffix,  res_tmp.size() == 15, 54, 0
+openLogFile,  res_tmp == 0 || res_tmp == -1, 108, 0
+computeNextRotationTime,  true, 43, 0
+addRule,  res_tmp == -1 || res_tmp == -2 || (res_tmp != -1 && res_tmp != -2), 302533, 0
+ruleId,  res_tmp == -1 || res_tmp >= 0, 159171, 0
+hash,  0 <= res_tmp && res_tmp < size, 61, 0
+addCollector,  res_tmp == 0 || res_tmp == 1, 19, 0
+getZoneinfoId,  res_tmp == 0 || res_tmp == -1, 108, 0
+lookupTimeZone,  res_tmp == 0 || res_tmp != 0, 146, 0
+findTransitionWithDstFlag,  res_tmp == timeZone.endTransitions() || res_tmp->descriptor().dstInEffectFlag() == dstFlag, 54, 0
+convertUtcToLocalTime,  true, 366, 0
+configureImp,  res_tmp == 0 || res_tmp != 0, 85, 0
+validateTimeZoneId,  res_tmp == 0 || res_tmp == -1 || res_tmp == -2, 403, 0
+loadTimeZoneImpl,  true, 13, 0
+loadTimeZoneFilePath,  true, 145, 0
+readRawTz,  res_tmp == 0 || res_tmp == -1 || res_tmp == -2, 427, 0
+readHeader,  res_tmp == 0 || res_tmp == -1 || res_tmp == -2 || res_tmp == -3 || res_tmp == -4 || res_tmp == -5 || res_tmp == -6 || res_tmp == -7 || res_tmp == -8 || res_tmp == -9, 1290, 0
+readVersion2Or3FormatData,  res_tmp == 0 || res_tmp == -23 || res_tmp == -24 || res_tmp == -25 || res_tmp == -26 || res_tmp == -27 || res_tmp == -28 || res_tmp == -29 || res_tmp == -30 || res_tmp == -31 || res_tmp == -32 || res_tmp == -33, 435, 0
+convertUtcToLocalTime,  res_tmp == 0 || res_tmp != 0, 1434, 0
+constraint,  true, 24714, 0
+validate,  res_tmp >= -3 && res_tmp <= 14, 1919671, 0
+parseEnvironmentVariable,  res_tmp == -1 || res_tmp == 1 || res_tmp > 1, 223, 0
+findName,  res_tmp >= -1, 5924, 378549
+index,  res_tmp >= -1, 19816, 0
+calculateNumberOfUnitsToDrain,  res_tmp >= 0, 12259158, 0
+calculateTimeToSubmit, TimeInterval(0$ 1), 0, 0
+registerHandler,  res_tmp == 0 || res_tmp == 1, 75, 0
+calculateTimeToSubmit,  res_tmp >= timeToSubmitPeak && res_tmp >= timeToSubmitSustained, 0, 0
+addGeneralPublisher,  res_tmp == 0 || res_tmp == -1, 345, 0
+registerCollectionCallback,  true, 2, 0
+setFormat,  res_tmp == 0 || res_tmp == -1, 50, 0
+insertId,  res_tmp.second == true || res_tmp.second == false, 0, 0
+numMetrics,  res_tmp >= 0, 104, 0
+makeInvalidInterval,  res_tmp.totalNanoseconds() == 0, 0, 0
+processData,  true, 0, 0
+main,  res_tmp == 0, 0, 0
+main,  res_tmp == -1, 0, 0
+calculateNextBufferSize,  res_tmp <= d_maxBufferSize && res_tmp >= size, 0, 0
+getNumDeletes,  res_tmp == s_numDeletes, 0, 0
+getProcessName,  (res_tmp == 0 && output != NULL) || res_tmp != 0, 0, 0
+compare,  true, 0, 0
+getComponentName,  res_tmp == 0 || res_tmp == -1 || res_tmp == -2 || res_tmp == -3, 0, 0

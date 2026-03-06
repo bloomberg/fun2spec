@@ -1,0 +1,20 @@
+Function Name, Postcondition, true, false
+getTraceBufferLength,  res_tmp >= specifiedMaxRecordedFrames && res_tmp % k_PTRS_PER_MAX == 0, 362, 0
+checkBlockHeader,  res_tmp == 0 || res_tmp == -1, 208473, 0
+allocate,  res_tmp!= 0 && BSLMA_TESTALLOCATOR_MAGIC(res_tmp) == k_ALLOCATED_BLOCK_MAGIC, 0, 0
+allocationLimit,  res_tmp == d_allocationLimit.loadRelaxed(), 209275, 0
+findBasename,  pathName <= res_tmp && res_tmp < ptr, 0, 230
+resolve,  res_tmp == -1, 0, 0
+printStackTrace,  res_tmp!= NULL && *res_tmp!= NULL, 0, 0
+operator<<,  res_tmp == stream, 0, 0
+print,  res_tmp.is_valid(), 0, 0
+print,  res_tmp == stream, 0, 0
+operator<<,  res_tmp == stream, 0, 0
+operator(),  res_tmp <= newSize, 2, 0
+getIdentifierOctets,  true, 61, 0
+getIdentifierOctets,  res_tmp == SUCCESS || res_tmp == FAILURE, 61, 0
+putIdentifierOctets,  res_tmp == SUCCESS || res_tmp == FAILURE, 61, 0
+getNumOctetsToStream,  res_tmp >= 0, 26, 0
+isValidTimezoneOffsetInMinutes,  res_tmp == (k_MIN_OFFSET <= value && k_MAX_OFFSET >= value), 9350177, 0
+toString,  res_tmp!= NULL, 0, 0
+startPos,  res_tmp >= d_consumedHeaderBytes + d_consumedBodyBytes, 38, 91

@@ -1,0 +1,171 @@
+encodeCharArray,  res_tmp == encodeSimpleValue(formatter$ base64String$ encoderOptions), 650, 0
+decodeObject,  res_tmp == 0 || res_tmp == -1 || res_tmp == -2 || res_tmp == -3 || res_tmp == -4, 1137, 0
+decodeArray,  res_tmp == 0 || res_tmp == -1 || res_tmp == -2 || res_tmp == -4, 3002, 0
+extractValue,  res_tmp == 0 || res_tmp == -1, 1646, 0
+encodeArray,  res_tmp == 0 || res_tmp!= 0, 466, 0
+encodeObject,  res_tmp == 0 || res_tmp!= 0, 599, 0
+decode,  res_tmp == -1 || res_tmp == -2 || res_tmp == -3, 832, 887
+getUnquotedString,  res_tmp == 0 || res_tmp!= 0, 105, 0
+fromAsciiCaseless,  res_tmp == 0 || res_tmp == -1, 87, 0
+getRecordPtr,  res_tmp->fixedFields().getFileName() == fileName && res_tmp->fixedFields().getLineNumber() == lineNumber, 0, 0
+format,  res_tmp == -1 || res_tmp <= numBytes, 0, 0
+hash,  0 <= res_tmp && res_tmp < size, 69, 0
+deregisterObserver,  res_tmp == 0 || res_tmp == 1, 25, 0
+findObserver,  res_tmp == nullptr || res_tmp!= nullptr, 50, 0
+getDefaultFormat,  res_tmp.size() == 9, 0, 0
+parse,  res_tmp == 0 || res_tmp == -1, 7059, 0
+setFormat,  res_tmp == -1 || res_tmp!= -1 && (0 <= res_tmp && res_tmp <= 3), 71333, 0
+fromAscii,  res_tmp == 0 || res_tmp == -1, 45, 0
+setLevels,  res_tmp == 0 || res_tmp == -1, 0, 0
+hash,  0 <= res_tmp && res_tmp < size, 134790, 0
+addCategory,  res_tmp == 0 || res_tmp!= 0, 45, 0
+defaultRecordBufferSize,  res_tmp == d_recordBufferSize, 7, 0
+hash,  0 <= res_tmp && res_tmp < size, 906466, 0
+getErrorCode,  res_tmp!= 0, 0, 0
+getTimestampSuffix,  isTimestamp(res_tmp), 0, 0
+openLogFile,  res_tmp == 0 || res_tmp == -1, 0, 0
+computeNextRotationTime,  res_tmp >= fileCreationTimeUtc, 0, 0
+addRule,  (res_tmp == -1 && value in d_ruleHashtable) || (res_tmp == -2 && d_ruleHashtable.size() >= maxNumRules()) || (res_tmp >= 0 && value in d_ruleHashtable && d_ruleHashtable.size() < maxNumRules()), 0, 0
+ruleId, d_ruleAddresses.size()), 0, 0
+hash,  0 <= res_tmp && res_tmp < size, 61, 0
+addCollector,  res_tmp == 0 || res_tmp == 1, 19, 0
+getZoneinfoId,  res_tmp == 0 || res_tmp == -1, 108, 0
+lookupTimeZone,  res_tmp == 0 || res_tmp!= 0, 146, 0
+findTransitionWithDstFlag,  res_tmp == timeZone.endTransitions() || res_tmp!= timeZone.endTransitions() && res_tmp->descriptor().dstInEffectFlag() == dstFlag, 54, 0
+convertUtcToLocalTime,  res_tmp == 0 || res_tmp!= 0, 55, 311
+configureImp,  res_tmp >= 0, 85, 0
+validateTimeZoneId,  res_tmp == 0 || res_tmp == -1 || res_tmp == -2, 403, 0
+loadTimeZoneImpl, UNSPECIFIED_ERROR || res_tmp == 0, 13, 0
+loadTimeZoneFilePath, loadTimeZoneFilePath_Impl(result$ timeZoneId$ d_rootPath), 0, 0
+readRawTz,  res_tmp == -1 || res_tmp == -2 || res_tmp == 0, 427, 0
+decode32,  res_tmp >= 0 && res_tmp < 2^32, 12608, 0
+readHeader,  res_tmp == 0 || res_tmp == -1 || res_tmp == -2 || res_tmp == -3 || res_tmp == -4 || res_tmp == -5 || res_tmp == -6 || res_tmp == -7 || res_tmp == -8 || res_tmp == -9, 1290, 0
+read,  res_tmp == readImpl(zoneinfoResult$ &description$ k_READ_NORMALIZED$ stream), 0, 378
+convertUtcToLocalTime, k_OUT_OF_RANGE, 0, 0
+addInterval,  res_tmp == 0, 14, 0
+constraint,  res_tmp!= NULL, 24714, 0
+validate,  res_tmp == 0 || res_tmp!= 0, 1919671, 0
+parseEnvironmentVariable,  (res_tmp == 1 || res_tmp == -1 || res_tmp >= 0 && res_tmp <= elements.size()), 0, 0
+findName,  res_tmp == -1 || res_tmp >= 0 && res_tmp < d_options.size(), 384473, 0
+index,  res_tmp >= 0 || res_tmp == -1, 19816, 0
+calculateNumberOfUnitsToDrain,  res_tmp > 0, 249157, 12697709
+calculateTimeToSubmit, TimeInterval(0$ 0), 0, 0
+registerHandler,  res_tmp == 0 || res_tmp == 1, 75, 0
+calculateTimeToSubmit,  res_tmp >= timeToSubmitPeak && res_tmp >= timeToSubmitSustained, 752, 0
+addGeneralPublisher,  res_tmp == -1 || res_tmp == 0, 345, 0
+registerCollectionCallback,  res_tmp >= 0, 124816, 0
+registerCollectionCallback,  res_tmp!= NULL, 2, 2
+setFormat,  res_tmp == 0 || res_tmp == -1, 50, 0
+insertId,  res_tmp.first!= 0 && res_tmp.second == true || res_tmp.first!= 0 && res_tmp.second == false, 3219, 0
+numMetrics,  res_tmp >= 0, 104, 0
+makeInvalidInterval,  true, 30812, 0
+calculateNextBufferSize,  res_tmp >= size || res_tmp <= d_maxBufferSize, 0, 0
+absLevel,  res_tmp >= 0, 115, 0
+getNumDeletes,  true, 0, 0
+getNumDeletes,  res_tmp >= 0, 0, 0
+getProcessName,  res_tmp == 0 || res_tmp == -1, 0, 0
+compare,  res_tmp == compare(expected$ strlen(expected)), 0, 0
+getComponentName,  res_tmp == 0 || res_tmp == -1 || res_tmp == -2 || res_tmp == -3, 0, 0
+vsnprintf_alwaysCount,  res_tmp >= 0, 0, 0
+vsnprintf_allocate,  res_tmp == 0 || res_tmp == -1 || res_tmp == -2, 0, 0
+lagTime,  res_tmp == 0 || res_tmp > 0, 76, 0
+convertToSchedulingPriority, e_SCHED_MAX, 0, 0
+addThreadGroup,  res_tmp == addThreadGroup(runFunction$ numThreads$ busyWorkAmount$ InitializeThreadFunction()$ CleanupThreadFunction()), 0, 5
+nativeDefaultThreadStackSizeImp,  1 <= res_tmp && res_tmp <= INT_MAX, 0, 0
+currentCount,  res_tmp == d_sigCount.loadAcquire(), 14980, 0
+message, value, 0, 0
+message, !res_tmp.empty(), 0, 0
+rotl,  res_tmp == (x << b), 0, 0
+u8to64_le,  res_tmp!= 0, 0, 0
+rawLt64,  res_tmp < (1ULL << 64), 0, 1714
+bound,  low <= res_tmp && res_tmp <= high, 5269502, 3459826
+divmod10,  0 <= res_tmp && res_tmp < 10, 1675598, 0
+canonicalizeDecimalValueClassification,  res_tmp == FP_NAN || res_tmp == FP_INFINITE || res_tmp == FP_ZERO || res_tmp == FP_NORMAL || res_tmp == FP_SUBNORMAL || res_tmp == -1, 0, 0
+getNewCapacity,  res_tmp >= length, 342, 0
+getNewCapacity,  res_tmp >= size, 70, 0
+getNewCapacity,  res_tmp >= size, 39, 0
+getNewCapacity,  res_tmp >= size, 42, 0
+calculateMaxAlignedSize,  res_tmp % objectAlignmentMin == 0, 0, 201238
+roundUp,  res_tmp % y == 0, 258, 0
+alignedAllocationSize,  true, 43426, 0
+initAlwaysUnavailable,  res_tmp >= (1ULL << 64), 53600, 0
+expand,  res_tmp <= d_bufferSize, 61, 0
+roundUp,  res_tmp >= x && res_tmp % y == 0, 1321, 0
+computeInternalBlockSize,  res_tmp >= MINIMUM_LENGTH, 1321, 0
+getSystemPageSize,  res_tmp > 0, 24239, 0
+systemProtect,  res_tmp == 0 || res_tmp == 1, 12121, 0
+systemUnprotect,  res_tmp == 0 || res_tmp!= 0, 12118, 0
+findPool,  0 <= res_tmp && res_tmp <= 31, 89424, 0
+alignedAllocationSize, BSLS_MAX_ALIGNMENT == 0, 0, 0
+alignedAllocationSize,  res_tmp >= size, 114, 0
+findPool,  0 <= res_tmp && res_tmp <= 31, 84775, 0
+fileSize,  res_tmp >= 0, 0, 0
+switchToInputMode,  res_tmp == 0 || res_tmp == -1, 0, 0
+underflow,  res_tmp == underflowRead(), 0, 0
+appendIfValid,  true, 4209, 0
+makeCanonicalName,  res_tmp == u_makeCanonicalName(pipeName$ baseName), 2, 0
+substr,  res_tmp.size() > 0, 7625, 0
+getProcessId,  true, 924, 0
+makeDirectory,  res_tmp == 0 || res_tmp == -1 || res_tmp == k_ERROR_ALREADY_EXISTS, 0, 0
+u_removeContentsOfTree,  res_tmp == 0 || res_tmp == -2 || res_tmp == -7 || res_tmp == -9 || res_tmp == -10 || res_tmp == -11, 589, 0
+getPid,  res_tmp >= 0, 36, 0
+getProcessId,  res_tmp > 0, 36, 0
+f1,  true, 4006272, 0
+f1,  res_tmp!= value, 2506800, 0
+f2,  true, 4006272, 0
+f2,  res_tmp >= 0 && res_tmp < (1ULL << 64), 0, 2506800
+f3,  true, 3004704, 0
+f3,  res_tmp >= 0, 2005440, 0
+f4,  res_tmp == rotateRight(value$ 17) ^ rotateRight(value$ 19) ^ (value >> 10), 120, 0
+f4,  res_tmp == value, 121, 2005319
+convert,  res_tmp == 0 || res_tmp == -1 || res_tmp == -2, 65825, 0
+getLengthInUse,  0 <= res_tmp && res_tmp < BYTEBLOCKSIZE, 793753, 0
+setSeekFailure,  res_tmp < 0, 9, 0
+overflow, eof(), 0, 0
+rotateLeft,  res_tmp == (value << shift) | (value >> ((sizeof(value) * CHAR_BIT) - shift)), 2162480, 0
+bitwiseConditional,  true, 626640, 0
+bitwiseMajority,  res_tmp == 0 || res_tmp == 1, 0, 626640
+f,  (res_tmp == bitwiseConditional(x$ y$ z)) || (res_tmp == bitwiseMajority(x$ y$ z)) || (res_tmp == x ^ y ^ z), 2506560, 0
+pack,  res_tmp == pack(bytes), 0, 0
+utf8ToUcs2,  res_tmp == k_SUCCESS || res_tmp == k_OUTPUT_BUFFER_TOO_SMALL || res_tmp == (k_SUCCESS | k_OUTPUT_BUFFER_TOO_SMALL), 657391, 9540520
+compare,  res_tmp == uc, 0, 0
+utf8Size,  1 <= res_tmp && res_tmp <= 4, 236227, 0
+get2ByteValue,  res_tmp >= 0 && res_tmp <= 0x3f, 95324, 8402025
+get3ByteValue,  0 <= res_tmp && res_tmp < (1 << 24), 9814178, 0
+get4ByteValue,  res_tmp >= 0 && res_tmp <= 0xFFFFFFFF, 8191910, 0
+validateAndCountCodePoints,  res_tmp >= 0, 7327998, 2032732
+getLineAndColumnNumber,  res_tmp == k_LOCATION_NOT_FOUND || res_tmp == 0 || res_tmp == status, 0, 0
+lookaheadContinuations,  0 <= res_tmp && res_tmp <= n, 378665, 0
+endConvert,  res_tmp == -1 || res_tmp == 0, 1036, 0
+numActiveThreads,  res_tmp == d_numActiveThreads, 46, 0
+advanceTime,  res_tmp > 0, 4, 0
+currentTime,  res_tmp.isValid(), 0, 0
+start,  res_tmp == start(attr).result(), 0, 0
+nextPendingEventTime,  res_tmp >= 0, 21, 0
+advanceTime,  res_tmp >= amount, 4, 0
+now,  res_tmp.is_valid(), 0, 0
+enqueueJob,  0 <= priority && priority < d_queue.numPriorities(), 22494, 0
+start,  res_tmp == 0 || res_tmp == -1, 129, 0
+createQueue,  res_tmp > 0 && res_tmp == d_nextId, 0, 7549
+invalidThreadId, invalidId(), 0, 0
+advanceTime,  res_tmp >= 0, 16, 0
+currentTime,  res_tmp == d_currentTime, 36, 0
+returnZero,  res_tmp == 0, 98, 0
+chooseNextEvent,  *now >= 0, 2266, 0
+cancelEvent, e_INVALID || res_tmp == cancelEvent(*handle), 0, 0
+advanceTime,  res_tmp > d_data_p->d_time, 0, 0
+now,  res_tmp >= 0, 5, 0
+nextPermit,  res_tmp == -1 || res_tmp == 0, 62, 0
+readUnquotedString,  res_tmp == 0 || res_tmp == -1, 262, 12
+findFirstNonDigit,  res_tmp >= begin && res_tmp <= end, 199381, 0
+expandBufferForLargeValue,  res_tmp == 0 || res_tmp == -1, 3153, 0
+advanceToNextToken,  res_tmp == 0 || res_tmp == -1, 88408, 0
+value,  res_tmp == 0 || res_tmp == -1, 1612, 0
+readObject,  res_tmp == 0 || res_tmp!= 0, 520, 0
+readArray,  res_tmp == 0 || res_tmp!= 0, 1622, 0
+readScalar,  res_tmp == 0 || res_tmp == -1, 873, 0
+read,  res_tmp == 0 || res_tmp == -1, 788, 35
+circularDifference,  res_tmp == minuend - subtrahend - modulo || res_tmp == minuend - subtrahend + modulo, 5162, 573808
+reservePushIndex,  res_tmp == 0 || res_tmp == e_QUEUE_FULL || res_tmp == e_DISABLED_QUEUE, 1844404, 0
+length,  0 <= res_tmp && res_tmp <= d_capacity, 1919723, 0
+charToHex,  res_tmp == 0 || res_tmp == -1, 0, 0

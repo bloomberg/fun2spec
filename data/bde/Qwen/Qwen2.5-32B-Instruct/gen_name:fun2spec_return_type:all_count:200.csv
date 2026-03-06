@@ -1,0 +1,200 @@
+Function Name, Postcondition, true, false
+getTraceBufferLength,  res_tmp >= specifiedMaxRecordedFrames && res_tmp % k_PTRS_PER_MAX == 0, 362, 0
+checkBlockHeader,  res_tmp == 0 || res_tmp == -1, 208473, 0
+allocate,  res_tmp == 0 || (res_tmp != 0 && (((UintPtr) res_tmp & ((sizeof(void *) - 1) | lowBits))) == 0), 0, 0
+allocationLimit,  true, 209275, 0
+findBasename, strlen(pathName), 0, 0
+resolve,  res_tmp == -1, 0, 0
+printStackTrace,  &res_tmp == &stream, 0, 0
+operator<<,  res_tmp == stream, 0, 0
+print,  res_tmp == stream, 0, 0
+print,  &res_tmp == &stream, 0, 0
+operator<<,  res_tmp.bad() == stream.bad(), 0, 0
+operator(),  res_tmp >= 0, 2, 0
+getIdentifierOctets,  true, 61, 0
+getIdentifierOctets,  res_tmp == SUCCESS || res_tmp == FAILURE, 61, 0
+putIdentifierOctets,  res_tmp == 0 || res_tmp == -1, 61, 0
+getNumOctetsToStream,  res_tmp >= 1 && res_tmp <= 2, 26, 0
+isValidTimezoneOffsetInMinutes,  res_tmp == ((k_MIN_OFFSET <= value) && (k_MAX_OFFSET >= value)), 10891500, 0
+lookupAttributeInfo,  res_tmp != NULL, 0, 0
+toString,  res_tmp != NULL, 0, 0
+startPos,  res_tmp >= 0, 129, 0
+logError,  res_tmp == rc, 90, 0
+logError, e_BER_ERROR, 0, 0
+nodeTypeAsString,  res_tmp != NULL, 0, 0
+parseBoolean,  res_tmp == BAEXML_SUCCESS || res_tmp == BAEXML_FAILURE, 18, 0
+parseDoubleImpl,  res_tmp == 0 || res_tmp == -1, 474, 0
+parseDouble,  res_tmp == BAEXML_SUCCESS || res_tmp == BAEXML_FAILURE, 474, 0
+parseInt,  res_tmp == BAEXML_SUCCESS || res_tmp == BAEXML_FAILURE, 251, 0
+parseUnsignedInt,  res_tmp == BAEXML_SUCCESS || res_tmp == BAEXML_FAILURE, 48, 0
+parseDecimal64Impl,  res_tmp == BAEXML_SUCCESS || res_tmp == BAEXML_FAILURE, 170, 0
+parse,  res_tmp == BAEXML_SUCCESS || res_tmp == BAEXML_FAILURE, 14177, 0
+errorSeverity, e_NO_ERROR, 0, 0
+nonNullStr,  res_tmp != NULL, 2, 0
+toChar,  true, 36, 0
+unicodeToUtf8,  res_tmp >= 0, 11, 0
+setError,  res_tmp == 0 || res_tmp == -1, 1674, 0
+errorInfo,  &res_tmp == &d_errorInfo, 0, 4
+skipSpaces,  res_tmp == 0 || res_tmp != ' ' && res_tmp != '\t' && res_tmp != '\r', 547174, 0
+lookupPredefinedPrefix,  true, 2, 0
+pushPrefix,  res_tmp == -1 || res_tmp >= 0, 28, 0
+lookupNamespaceId,  true, 27, 0
+nonNullStr,  res_tmp != NULL, 31, 0
+doOpen,  true, 15, 0
+allocator,  res_tmp != NULL, 0, 0
+getFormatterInitialIndentLevel,  res_tmp == 0 || res_tmp == options.initialIndentLevel(), 735, 0
+prefix,  res_tmp != NULL, 5, 0
+operator=,  &res_tmp == this, 0, 0
+addBlankLine,  true, 0, 0
+printTextReplacingXMLEscapes,  res_tmp == 0 || (res_tmp >= data && res_tmp <= data + dataLength), 0, 0
+printDecimalWithDigitsOptions,  true, 0, 0
+extractNamespaceFromXsd,  true, 12, 0
+addBlankLine,  res_tmp == stream, 0, 0
+lookupPredefinedId, e_PREDEF_MIN || res_tmp == -1, 0, 0
+encodeCharArray,  true, 650, 0
+decodeObject,  res_tmp == 0 || res_tmp == -1 || res_tmp == -2 || res_tmp == -3 || res_tmp == -4, 1137, 0
+decodeArray,  res_tmp == 0 || res_tmp != 0, 3002, 0
+extractValue,  res_tmp == 0 || res_tmp == -1, 1646, 0
+encodeArray,  true, 466, 0
+encodeObject,  true, 599, 0
+decode,  res_tmp == 0 || res_tmp == -1 || res_tmp == -2 || res_tmp == -3, 1719, 0
+logTokenizerError,  true, 0, 0
+getUnquotedString,  true, 105, 0
+isValidDefaultRecordBufferSize,  true, 3, 0
+operator=,  &res_tmp == this, 0, 2
+defaults,  true, 1, 0
+operator==,  res_tmp == true || res_tmp == false, 262, 0
+fromAsciiCaseless,  res_tmp == BALL_SUCCESS || res_tmp == BALL_FAILURE, 87, 0
+disassembleSharedPtr,  res_tmp != NULL, 112657, 0
+filterName,  res_tmp != NULL, 5628, 0
+isCategoryEnabled,  true, 118777, 0
+convertBslsLogSeverity, e_TRACE, 0, 0
+getRecordPtr,  res_tmp != NULL, 118749, 0
+getRecord,  res_tmp != NULL, 112657, 0
+isCategoryEnabled,  true, 112632, 0
+allocator,  true, 46, 0
+format,  res_tmp == -1 || res_tmp >= 0, 1753, 0
+operator==, strcmp(lhs.format()$ rhs.format()) == 0 && lhs.timestampOffset() == rhs.timestampOffset()), 0, 0
+hash,  0 <= res_tmp && res_tmp < size, 69, 0
+operator=,  &res_tmp == this, 0, 603
+print,  res_tmp == stream, 0, 0
+operator=,  &res_tmp == this, 0, 384
+hasValue,  true, 19489, 0
+operator==,  res_tmp == true || res_tmp == false, 31496, 0
+print,  true, 0, 0
+toAscii,  res_tmp != NULL, 0, 0
+isValid,  true, 490, 0
+print,  &res_tmp == &stream, 0, 0
+addCategoryHierarchically,  res_tmp == 0 || res_tmp != 0, 0, 0
+deregisterObserver,  res_tmp == 0 || res_tmp == 1, 25, 0
+findObserver,  res_tmp != NULL, 36, 14
+getDefaultFormat,  true, 9, 0
+parse,  res_tmp == 0 || res_tmp == -1, 7059, 0
+name,  !res_tmp.empty(), 3, 0
+key,  true, 8, 0
+make,  res_tmp != NULL, 529106, 0
+setFormat,  true, 71333, 0
+fromAscii,  res_tmp == 0 || res_tmp == -1, 45, 0
+print,  &res_tmp == &stream, 0, 0
+setLevels,  res_tmp == 0 || res_tmp == -1, 0, 0
+hash,  res_tmp < size, 134790, 0
+operator=,  res_tmp == *this, 384, 0
+evaluate,  res_tmp == true || res_tmp == false, 19, 0
+operator==,  true, 31432, 0
+addCategory,  res_tmp == 0 || res_tmp == 1, 45, 0
+createStopRecord,  true, 226, 0
+isStopRecord,  true, 633003, 0
+isValidDefaultRecordBufferSize,  res_tmp == (0 < numBytes), 11, 0
+operator=,  res_tmp.d_recordBufferSize == rhs.d_recordBufferSize && res_tmp.d_loggerBufferSize == rhs.d_loggerBufferSize && res_tmp.d_defaultRecordLevel == rhs.d_defaultRecordLevel && res_tmp.d_defaultPassLevel == rhs.d_defaultPassLevel && res_tmp.d_defaultTriggerLevel == rhs.d_defaultTriggerLevel && res_tmp.d_defaultTriggerAllLevel == rhs.d_defaultTriggerAllLevel, 2, 0
+defaultRecordBufferSize,  res_tmp == d_recordBufferSize, 7, 0
+operator==,  (res_tmp == true && lhs.d_recordBufferSize == rhs.d_recordBufferSize && lhs.d_loggerBufferSize == rhs.d_loggerBufferSize && lhs.d_defaultRecordLevel == rhs.d_defaultRecordLevel && lhs.d_defaultPassLevel == rhs.d_defaultPassLevel && lhs.d_defaultTriggerLevel == rhs.d_defaultTriggerLevel && lhs.d_defaultTriggerAllLevel == rhs.d_defaultTriggerAllLevel) || (res_tmp == false && !(lhs.d_recordBufferSize == rhs.d_recordBufferSize && lhs.d_loggerBufferSize == rhs.d_loggerBufferSize && lhs.d_defaultRecordLevel == rhs.d_defaultRecordLevel && lhs.d_defaultPassLevel == rhs.d_defaultPassLevel && lhs.d_defaultTriggerLevel == rhs.d_defaultTriggerLevel && lhs.d_defaultTriggerAllLevel == rhs.d.defaultTriggerAllLevel)), 0, 0
+message,  res_tmp[length] == '\0', 58, 0
+operator==,  (lhs.d_timestamp == rhs.d_timestamp && lhs.d_processID == rhs.d_processID && lhs.d_threadID == rhs.d_threadID && lhs.d_severity == rhs.d_severity && lhs.d_lineNumber == rhs.d_lineNumber && lhs.d_fileName == rhs.d_fileName && lhs.d_category == rhs.d_category && lhs.messageRef() == rhs.messageRef()) == res_tmp, 276, 0
+update,  true, 84602, 0
+print,  res_tmp == stream, 0, 0
+contextKey,  &res_tmp != NULL, 0, 0
+getContext,  res_tmp != NULL, 734, 0
+hasRelevantActiveRules,  res_tmp == true || res_tmp == false, 7985, 4
+print,  &res_tmp == &stream, 0, 0
+hash,  0 <= res_tmp && res_tmp < size, 906466, 0
+print,  &res_tmp == &stream, 0, 0
+operator<<,  true, 0, 0
+type, e_CHAR_ARRAY, 0, 0
+getErrorCode,  true, 3, 0
+getTimestampSuffix,  true, 54, 0
+hasEscapePattern,  true, 13, 0
+openLogFile,  res_tmp == 0 || res_tmp == -1, 41, 0
+fuzzyEqual,  res_tmp == true || res_tmp == false, 43, 0
+computeNextRotationTime,  res_tmp > fileCreationTimeUtc, 43, 0
+isFileLoggingEnabled,  true, 102, 0
+print,  true, 0, 0
+operator<<,  res_tmp == output, 0, 0
+operator=,  res_tmp != NULL, 0, 0
+hasValue,  res_tmp == true || res_tmp == false, 224, 0
+operator==,  res_tmp == (lhs == rhs), 0, 0
+addRule,  res_tmp == -1 || res_tmp == -2 || res_tmp >= 0, 302533, 0
+ruleId,  res_tmp == -1 || res_tmp >= 0, 9, 0
+operator==,  true, 175253, 0
+hash,  res_tmp >= 0 && res_tmp < size, 61, 0
+operator=,  true, 243, 0
+print,  res_tmp == stream, 0, 0
+addCollector,  res_tmp == 0 || res_tmp == 1, 19, 0
+print,  res_tmp == stream, 0, 0
+isValidPattern,  true, 0, 0
+addNewCategory,  res_tmp != NULL, 8436, 0
+lookupCategory,  res_tmp != NULL || res_tmp == NULL, 6540, 0
+print,  &res_tmp == &stream, 0, 0
+operator<<,  true, 0, 0
+isLessThan, strcmp(a.d_key$ b.d_key) < 0), 0, 0
+getZoneinfoId,  res_tmp == 0 || res_tmp == -1, 108, 0
+initSystemDefaultCache,  res_tmp != NULL, 3, 0
+instance,  res_tmp != NULL, 21, 0
+defaultZoneinfoDataLocation,  res_tmp != NULL, 6, 0
+lookupTimeZone,  (res_tmp == 0 && *timeZone != NULL) || (res_tmp != 0 && *timeZone == NULL), 146, 0
+findTransitionWithDstFlag,  res_tmp != timeZone.endTransitions() || res_tmp == timeZone.endTransitions(), 54, 0
+convertUtcToLocalTime, convertUtcToLocalTime(result$ &tmp_var$ utcTime$ *tmp_var), 0, 0
+print,  res_tmp == stream, 0, 0
+print,  res_tmp == true, 0, 0
+configureImp,  res_tmp == 0 || res_tmp != 0, 85, 0
+validateTimeZoneId,  res_tmp == 0 || res_tmp == -1 || res_tmp == -2, 403, 0
+loadTimeZoneImpl,  true, 13, 0
+isPlausibleZoneinfoRootPath,  true, 81, 0
+loadTimeZoneFilePath,  true, 145, 0
+areAllPrintable,  res_tmp == true || res_tmp == false, 4, 0
+readRawTz,  res_tmp == 0 || res_tmp == -1 || res_tmp == -2, 427, 0
+decode32,  true, 12608, 0
+readHeader,  res_tmp == 0 || res_tmp < 0, 1290, 0
+readVersion2Or3FormatData,  res_tmp == 0 || res_tmp < 0, 435, 0
+read,  true, 378, 0
+convertUtcToLocalTime, k_OUT_OF_RANGE, 0, 0
+operator<<,  !res_tmp.bad(), 0, 0
+print,  &res_tmp == &stream, 0, 0
+containsDescriptor,  res_tmp == true || res_tmp == false, 5980, 0
+print,  res_tmp == stream, 0, 0
+operator<<,  &res_tmp == &stream, 0, 0
+operator(),  true, 122495, 0
+operator<<,  &res_tmp == &stream, 0, 0
+addInterval,  result != originalTime, 0, 0
+print,  true, 0, 0
+getZoneinfo,  (*rc == 0 || *rc == -1), 0, 0
+lookupZoneinfo,  res_tmp != NULL || res_tmp == 0, 0, 0
+print,  true, 0, 0
+operator=,  true, 136, 0
+operator==,  res_tmp == true || res_tmp == false, 581436, 0
+parseValue,  res_tmp == true || res_tmp == false, 80, 0
+elemTypeToString,  res_tmp != NULL, 0, 0
+type,  true, 373, 0
+operator=,  true, 7140, 0
+constraint,  true, 24714, 0
+operator==,  res_tmp == true || res_tmp == false, 67716, 0
+value,  true, 501, 0
+operator<<,  res_tmp != NULL, 0, 0
+isValidEnvironmentVariableName,  true, 841, 0
+validate,  res_tmp >= 0, 1919662, 9
+parseEnvironmentVariable,  res_tmp == -1 || res_tmp >= 0, 223, 0
+findName,  res_tmp >= -1, 5924, 378549
+isValidOptionSpecificationTable,  res_tmp == true || res_tmp == false, 1580, 0
+operator=,  &res_tmp == this, 0, 355813
+hasOption,  true, 8886, 0
+theBool,  res_tmp == true || res_tmp == false, 457, 0
+operator==,  res_tmp == (lhs.isParsed() && rhs.isParsed() && lhs.options() == rhs.options()), 2847707, 0

@@ -1,0 +1,27 @@
+Function Name, Postcondition, true, false
+allocate,  res_tmp != NULL, 0, 0
+deallocate,  (d_buffer_p <= address && address < d_buffer_p + d_bufferSize) || d_allocator_p->deallocate(address), 0, 0
+operator<<,  res_tmp == stream, 0, 0
+operator<<,  res_tmp == stream, 0, 0
+getTraceBufferLength,  res_tmp >= specifiedMaxRecordedFrames, 362, 0
+checkBlockHeader,  res_tmp == -1, 254, 208219
+failAbort,  true, 0, 0
+allocate,  res_tmp != NULL, 0, 0
+allocationLimit,  true, 209275, 0
+findBasename,  res_tmp != NULL, 230, 0
+resolve,  res_tmp == -1, 0, 0
+printStackTrace,  res_tmp != NULL, 0, 0
+operator<<,  &res_tmp == &stream, 0, 0
+print,  res_tmp == stream, 0, 0
+print,  res_tmp == stream, 0, 0
+operator<<,  res_tmp == stream, 0, 0
+operator(),  res_tmp == d_oldSize + nRead, 2, 0
+warnOnce,  true, 0, 0
+getIdentifierOctets,  res_tmp >= 0, 61, 0
+getIdentifierOctets,  res_tmp == SUCCESS || res_tmp == FAILURE, 61, 0
+putIdentifierOctets,  res_tmp == 0, 61, 0
+getNumOctetsToStream,  res_tmp >= 1, 26, 0
+isValidTimezoneOffsetInMinutes,  res_tmp == true || res_tmp == false, 9602572, 0
+lookupAttributeInfo,  res_tmp != 0, 0, 0
+toString,  res_tmp != "(* UNKNOWN *)", 0, 0
+logErrorImp,  (int)d_severity >= (int)e_BER_ERROR, 0, 0

@@ -1,0 +1,199 @@
+Function Name, Postcondition, true, false
+getTraceBufferLength,  res_tmp >= specifiedMaxRecordedFrames && 0 == res_tmp % k_PTRS_PER_MAX, 362, 0
+checkBlockHeader,  res_tmp == 0 || res_tmp == -1, 208473, 0
+allocate,  (res_tmp != NULL && size != 0, 0, 0
+allocationLimit,  true, 209275, 0
+findBasename,  res_tmp >= pathName, 230, 0
+resolve,  true, 0, 0
+printStackTrace,  true, 0, 0
+operator<<,  &res_tmp != &stream, 0, 0
+print,  &res_tmp == &stream, 0, 0
+print,  !res_tmp.bad(), 0, 0
+operator<<,  !res_tmp.bad(), 0, 0
+operator(),  res_tmp >= d_oldSize, 2, 0
+getIdentifierOctets,  true, 61, 0
+getIdentifierOctets,  res_tmp == SUCCESS || res_tmp == FAILURE, 61, 0
+putIdentifierOctets,  res_tmp == SUCCESS || res_tmp == FAILURE, 61, 0
+getNumOctetsToStream,  res_tmp >= 1, 26, 0
+isValidTimezoneOffsetInMinutes,  res_tmp == true || res_tmp == false, 9336336, 0
+lookupAttributeInfo,  res_tmp != 0, 0, 0
+toString,  res_tmp != NULL, 0, 0
+startPos,  res_tmp >= 0, 129, 0
+logError,  true, 90, 0
+logError, e_BER_ERROR, 0, 0
+nodeTypeAsString,  res_tmp != NULL, 0, 0
+parseBoolean,  res_tmp == 0 || res_tmp == -1, 18, 0
+parseDoubleImpl,  (res_tmp == BAEXML_SUCCESS && *result != 0) || (res_tmp == BAEXML_FAILURE && *result == 0), 422, 52
+parseDouble,  res_tmp == BAEXML_SUCCESS || res_tmp == BAEXML_FAILURE, 474, 0
+parseInt,  (res_tmp == BAEXML_SUCCESS && *result != 0) || (res_tmp == BAEXML_FAILURE && *result == 0), 230, 21
+parseUnsignedInt,  res_tmp == BAEXML_SUCCESS || res_tmp == BAEXML_FAILURE, 48, 0
+parseDecimal64Impl,  res_tmp == BAEXML_SUCCESS || res_tmp == BAEXML_FAILURE, 170, 0
+parse,  res_tmp == BAEXML_SUCCESS || res_tmp == BAEXML_FAILURE, 14177, 0
+nonNullStr,  res_tmp != NULL, 2, 0
+toChar,  true, 36, 0
+unicodeToUtf8,  (res_tmp > 0 && res_tmp <= 4) || res_tmp == 0, 11, 0
+setError,  res_tmp == 0 || res_tmp == -1, 1674, 0
+errorInfo,  true, 4, 0
+skipSpaces,  res_tmp >= 0 && res_tmp <= 127, 547174, 0
+lookupPredefinedPrefix,  res_tmp.d_prefix == prefix || res_tmp == nullPrefix, 0, 0
+pushPrefix,  res_tmp != -1, 28, 0
+lookupNamespaceId,  res_tmp >= 0, 18, 9
+nonNullStr,  res_tmp != NULL, 31, 0
+doOpen,  res_tmp >= 0, 4900, 207
+allocator,  true, 0, 0
+getFormatterInitialIndentLevel, PRETTY), 0, 0
+prefix,  res_tmp != NULL, 5, 0
+operator=,  res_tmp.d_mode == rhs.d_mode && res_tmp.d_compact.object() == rhs.d_compact.object() && res_tmp.d_pretty.object() == rhs.d_pretty.object(), 0, 0
+addBlankLine,  true, 0, 0
+printTextReplacingXMLEscapes,  res_tmp == NULL || res_tmp > data, 0, 0
+printDecimalWithDigitsOptions,  &res_tmp == &stream, 0, 0
+extractNamespaceFromXsd,  res_tmp == true || res_tmp == false, 12, 0
+addBlankLine,  true, 0, 0
+lookupPredefinedId,  res_tmp >= -1 && res_tmp <= ARRAY_LEN(predefinedNamespaces), 63, 5
+encodeCharArray,  res_tmp == 0 || res_tmp != 0, 650, 0
+decodeObject,  res_tmp == 0 || res_tmp != 0, 1137, 0
+decodeArray,  res_tmp == 0 || res_tmp == -1 || res_tmp == -2 || res_tmp == -4, 3002, 0
+extractValue,  res_tmp >= -1 && res_tmp <= 1, 1646, 0
+encodeArray,  res_tmp == 0 || res_tmp != 0, 466, 0
+encodeObject,  res_tmp == 0 || res_tmp != 0, 599, 0
+decode,  res_tmp == 0 || res_tmp != 0, 1719, 0
+logTokenizerError,  true, 0, 0
+getUnquotedString,  res_tmp == 0 || res_tmp != 0, 105, 0
+isValidDefaultRecordBufferSize,  res_tmp == true || res_tmp == false, 3, 0
+operator=,  &res_tmp == &rhs, 5, 2
+defaults,  true, 1, 0
+operator==,  true, 128, 0
+fromAsciiCaseless,  res_tmp == BALL_SUCCESS || res_tmp == BALL_FAILURE, 87, 0
+disassembleSharedPtr,  res_tmp != nullptr, 112657, 0
+filterName,  res_tmp != NULL && (res_tmp == originalName || res_tmp == filteredNameBuffer->c_str()), 5628, 0
+isCategoryEnabled,  res_tmp == true || res_tmp == false, 118778, 0
+getRecordPtr,  res_tmp != NULL && res_tmp->fixedFields().fileName() == fileName && res_tmp->fixedFields().lineNumber() == lineNumber, 0, 118717
+getRecord,  res_tmp != NULL, 112657, 0
+isCategoryEnabled,  res_tmp == true || res_tmp == false, 112632, 0
+allocator,  res_tmp != NULL, 46, 0
+format,  (res_tmp == -1 && strlen(buffer) >= numBytes) || res_tmp >= 0, 1929, 70
+operator==, strcmp(lhs.format()$ rhs.format()) == 0 && lhs.timestampOffset() == rhs.timestampOffset()), 0, 0
+hash,  res_tmp >= 0 && res_tmp < size, 22086, 0
+operator=,  &res_tmp == &rhs, 603, 603
+print,  true, 0, 0
+operator=,  res_tmp.size() == rhs.size(), 0, 0
+hasValue,  res_tmp == true || res_tmp == false, 19489, 0
+operator==, all_of(lhs.begin()$ lhs.end()$ [&](const auto &attr){return rhs.hasValue(attr);}), 0, 0
+print,  &stream != nullptr, 0, 0
+toAscii,  res_tmp != nullptr, 0, 0
+isValid,  res_tmp == true || res_tmp == false, 490, 0
+print,  true, 0, 0
+addCategoryHierarchically,  res_tmp != 0, 0, 0
+deregisterObserver,  res_tmp == 0 || res_tmp == 1, 25, 0
+findObserver,  true, 50, 0
+getDefaultFormat,  !res_tmp.empty(), 0, 0
+parse,  res_tmp == 0 || res_tmp == -1, 7059, 0
+name,  true, 3, 0
+key,  true, 8, 0
+make,  res_tmp != NULL, 529106, 0
+setFormat,  res_tmp >= -1 && res_tmp <= 1, 71333, 0
+fromAscii,  res_tmp == 0 || res_tmp == -1, 45, 0
+print,  true, 0, 0
+setLevels,  res_tmp == 0 || res_tmp == -1, 0, 0
+hash,  res_tmp >= 0 && res_tmp < size, 134790, 0
+operator=,  &res_tmp == &rhs, 0, 384
+evaluate,  res_tmp == true || res_tmp == false, 19, 0
+operator==,  res_tmp == true || res_tmp == false, 31432, 0
+addCategory,  res_tmp == 0 || rescondition == -1, 0, 0
+createStopRecord,  true, 226, 0
+isStopRecord,  res_tmp == true || res_tmp == false, 643278, 0
+isValidDefaultRecordBufferSize,  res_tmp == (numBytes > 0), 11, 0
+operator=,  &res_tmp == this, 0, 2
+defaultRecordBufferSize,  res_tmp >= 0, 7, 0
+operator==,  res_tmp == true || res_tmp == false, 100, 0
+message,  res_tmp[length] == '\0', 58, 0
+operator==,  res_tmp == true || res_tmp == false, 276, 0
+update,  res_tmp == d_resultMask, 46156, 0
+print,  true, 0, 0
+contextKey,  true, 0, 0
+getContext,  res_tmp != NULL, 734, 0
+hasRelevantActiveRules,  res_tmp == true || res_tmp == false, 7985, 4
+print,  true, 0, 0
+hash,  res_tmp >= 0 && res_tmp < size, 906466, 0
+print,  true, 0, 0
+operator<<,  true, 0, 0
+type, e_CHAR_ARRAY), 0, 0
+getErrorCode,  res_tmp >= 0, 1, 0
+getTimestampSuffix,  res_tmp.length() == 15, 54, 0
+hasEscapePattern,  res_tmp == true || res_tmp == false, 9, 0
+openLogFile,  res_tmp == 0 || res_tmp == -1, 41, 0
+fuzzyEqual,  res_tmp == true || res_tmp == false, 43, 0
+computeNextRotationTime,  res_tmp >= referenceStartTime && res_tmp < referenceStartTime + interval, 6, 37
+isFileLoggingEnabled,  res_tmp == true || res_tmp == false, 22, 0
+print,  true, 0, 0
+operator<<,  true, 0, 0
+operator=,  &res_tmp == this, 0, 153
+hasValue,  res_tmp == true || res_tmp == false, 224, 0
+operator==,  res_tmp == (lhs.numContainers() == rhs.numContainers()), 891, 110
+addRule,  res_tmp >= -2 && res_tmp <= 1, 56457, 246076
+ruleId,  res_tmp >= -1 && res_tmp <= static_cast<int>(d_ruleAddresses.size()), 2564, 156607
+operator==,  res_tmp == ((lhs.numRules() == rhs.numRules()) && (all rules from lhs are present in rhs)), 0, 0
+hash,  res_tmp >= 0 && res_tmp < size, 61, 0
+operator=,  &res_tmp == this, 0, 243
+print,  true, 0, 0
+addCollector,  res_tmp == 0 || res_tmp == 1, 19, 0
+print,  true, 0, 0
+isValidPattern,  res_tmp == true || res_tmp == false, 0, 0
+addNewCategory,  res_tmp != NULL, 8436, 0
+lookupCategory,  res_tmp != 0 || res_tmp == 0, 6540, 0
+print,  true, 0, 0
+operator<<,  true, 0, 0
+isLessThan, strcmp(a.d_key$ b.d_key) < 0), 0, 0
+getZoneinfoId,  res_tmp == 0 || res_tmp == -1, 108, 0
+initSystemDefaultCache,  true, 3, 0
+instance,  res_tmp != nullptr, 21, 0
+defaultZoneinfoDataLocation,  res_tmp != NULL, 6, 0
+lookupTimeZone,  res_tmp == 0 || res_tmp != 0, 146, 0
+findTransitionWithDstFlag,  res_tmp != timeZone.endTransitions(), 26, 28
+convertUtcToLocalTime,  res_tmp == 0 || res_tmp != 0, 55, 311
+print,  &stream == res_tmp, 0, 0
+print,  res_tmp == stream, 0, 0
+configureImp,  res_tmp == 0 || res_tmp != 0, 85, 0
+validateTimeZoneId,  res_tmp == -1 || res_tmp == -2 || res_tmp == 0, 403, 0
+loadTimeZoneImpl, UNSPECIFIED_ERROR, 0, 0
+isPlausibleZoneinfoRootPath,  res_tmp == true || res_tmp == false, 81, 0
+loadTimeZoneFilePath,  res_tmp == 0 || res_tmp == !result->empty(), 112, 33
+areAllPrintable,  res_tmp == true || res_tmp == false, 4, 0
+readRawTz,  res_tmp == -1 || res_tmp == -2 || res_tmp == 0, 427, 0
+decode32,  true, 12608, 0
+readHeader,  res_tmp == 0 || res_tmp < 0, 1290, 0
+readVersion2Or3FormatData,  res_tmp == 0 || res_tmp <= -23, 435, 0
+read,  res_tmp == 0 || res_tmp == -1, 348, 30
+convertUtcToLocalTime, k_OUT_OF_RANGE, 0, 0
+operator<<,  res_tmp == stream, 0, 0
+print,  true, 0, 0
+containsDescriptor,  res_tmp == true || res_tmp == false, 5980, 0
+print,  res_tmp.fail(), 0, 0
+operator<<,  res_tmp != NULL, 0, 0
+operator(),  res_tmp == true || res_tmp == false, 122495, 0
+operator<<,  true, 0, 0
+addInterval,  res_tmp == 0 || res_tmp != 0, 14, 0
+print, uncaught_exception(), 0, 0
+getZoneinfo,  res_tmp != NULL, 0, 0
+lookupZoneinfo,  res_tmp != 0 || res_tmp == 0, 0, 0
+print,  true, 0, 0
+operator=,  &res_tmp != &rhs, 136, 0
+operator==,  res_tmp == true || res_tmp == false, 581436, 0
+parseValue,  res_tmp == true || res_tmp == false, 80, 0
+elemTypeToString,  strcmp(res_tmp$ "A 'char'", 0, 0
+type, e_BOOL, 0, 0
+operator=,  &res_tmp == this, 0, 7140
+constraint,  true, 24714, 0
+operator==,  res_tmp == true || res_tmp == false, 67716, 0
+type,  true, 3250, 0
+value,  res_tmp != NULL, 446, 55
+operator<<, uncaught_exception(), 0, 0
+isValidEnvironmentVariableName,  res_tmp == isValidEnvironmentVariableName(environmentVariableName), 0, 0
+validate,  res_tmp >= 0, 1919662, 9
+parseEnvironmentVariable,  res_tmp == 1 || res_tmp == -1, 215, 8
+findName,  res_tmp >= -1, 5924, 378549
+isValidOptionSpecificationTable,  res_tmp == (status == 0), 1580, 0
+operator=,  res_tmp.d_state == rhs.d_state && res_tmp.d_options == rhs.d_options && res_tmp.d_arguments == rhs.d_arguments, 355813, 364692
+hasOption,  res_tmp == (findName(name) >= 0), 8886, 0
+theBool,  res_tmp == true || res_tmp == false, 457, 0
+operator==,  res_tmp == (lhs.isParsed() && rhs.isParsed() && lhs.options() == rhs.options()), 2847707, 0

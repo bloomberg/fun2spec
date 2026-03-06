@@ -1,0 +1,31 @@
+Function Name, Postcondition, true, false
+getTraceBufferLength,  res_tmp >= specifiedMaxRecordedFrames, 362, 0
+checkBlockHeader,  res_tmp == -1, 254, 208219
+allocationLimit,  true, 209275, 0
+resolve,  res_tmp == -1, 0, 0
+operator(),  res_tmp == d_oldSize + nRead, 2, 0
+getIdentifierOctets,  res_tmp >= 0, 61, 0
+getIdentifierOctets,  res_tmp == SUCCESS || res_tmp == FAILURE, 61, 0
+putIdentifierOctets,  res_tmp == 0, 61, 0
+getNumOctetsToStream,  res_tmp >= 1, 26, 0
+startPos,  res_tmp >= 0, 129, 0
+logError,  int, 0, 0
+parseBoolean,  res_tmp == BAEXML_SUCCESS, 18, 0
+parseDoubleImpl,  res_tmp == BAEXML_SUCCESS || res_tmp == BAEXML_FAILURE, 474, 0
+parseDouble,  res_tmp == 0 || res_tmp == -1, 474, 0
+parseInt,  res_tmp == BAEXML_SUCCESS || res_tmp == BAEXML_FAILURE, 251, 0
+parseUnsignedInt,  res_tmp == BAEXML_SUCCESS || res_tmp == BAEXML_FAILURE, 48, 0
+parseDecimal64Impl,  (res_tmp == BAEXML_SUCCESS && !decimalMode) || (res_tmp == BAEXML_FAILURE && decimalMode), 94, 76
+parse,  res_tmp == 0 || res_tmp != 0, 14177, 0
+unicodeToUtf8,  res_tmp > 0, 11, 0
+setError,  res_tmp == 0 || res_tmp == -1, 1674, 0
+skipSpaces,  res_tmp != 0, 546882, 292
+pushPrefix,  res_tmp >= 0, 28, 0
+lookupNamespaceId,  res_tmp >= 0, 18, 9
+doOpen,  res_tmp == 0 || res_tmp < 0, 5107, 0
+getFormatterInitialIndentLevel,  res_tmp >= 0, 735, 0
+lookupPredefinedId,  res_tmp >= 0 && res_tmp < ARRAY_LEN(predefinedNamespaces), 0, 68
+encodeCharArray,  res_tmp == 0, 650, 0
+decodeObject,  res_tmp == 0 || res_tmp == -4 || res_tmp == -1 || res_tmp == -2 || res_tmp == -3, 1137, 0
+decodeArray,  res_tmp == 0 || res_tmp == -4 || res_tmp == -1 || res_tmp == -2, 3002, 0
+extractValue,  res_tmp == 0 || res_tmp == -1, 1646, 0

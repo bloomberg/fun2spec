@@ -1,0 +1,10 @@
+{'function name': 'getTraceBufferLength', 'true': 362, 'false': 0, 'return_code': 0}
+{'function name': 'checkBlockHeader', 'true': 208473, 'false': 0, 'return_code': 0}
+{'function name': 'allocate', 'true': 0, 'false': 0, 'return_code': 1}
+{'function name': 'allocationLimit', 'true': 209275, 'false': 0, 'return_code': 0}
+{'function name': 'findBasename', 'true': 230, 'false': 0, 'return_code': 0}
+{'function name': 'resolve', 'true': 0, 'false': 0, 'return_code': 0}
+{'function name': 'printStackTrace', 'true': 0, 'false': 0, 'return_code': 1}
+{'function name': 'operator<<', 'true': 0, 'false': 0, 'return_code': 1}
+{'function name': 'print', 'true': 0, 'false': 0, 'return_code': 1}
+{'function name': 'print', 'true': 0, 'false': 0, 'return_code': 1}

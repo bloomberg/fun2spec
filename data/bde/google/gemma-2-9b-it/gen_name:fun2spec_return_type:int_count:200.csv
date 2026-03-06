@@ -1,0 +1,198 @@
+Function Name, Postcondition, true, false
+getTraceBufferLength,  res_tmp >= specifiedMaxRecordedFrames && (res_tmp % k_PTRS_PER_MAX) == 0, 362, 0
+checkBlockHeader,  res_tmp == 0 || res_tmp == -1, 208473, 0
+allocationLimit,  true, 209275, 0
+resolve,  res_tmp == -1, 0, 0
+operator(),  res_tmp >= d_oldSize && res_tmp <= d_oldSize + newSize, 2, 0
+getIdentifierOctets,  true, 61, 0
+getIdentifierOctets,  res_tmp == 0 || res_tmp == -1, 61, 0
+putIdentifierOctets,  res_tmp == 0 || res_tmp == -1, 61, 0
+getNumOctetsToStream,  res_tmp >= 1, 26, 0
+startPos,  res_tmp >= 0, 129, 0
+logError,  res_tmp == d_decoder->logError(msg), 90, 0
+parseBoolean,  res_tmp == BAEXML_SUCCESS || res_tmp == BAEXML_FAILURE, 18, 0
+parseDoubleImpl,  res_tmp == 0 || res_tmp == -1, 474, 0
+parseDouble,  res_tmp == 0 || res_tmp == -1, 474, 0
+parseInt,  res_tmp == 0 || res_tmp == -1, 251, 0
+parseUnsignedInt,  res_tmp == 0 || res_tmp == -1, 48, 0
+parseDecimal64Impl,  res_tmp == 0 || res_tmp == -1, 170, 0
+parse,  res_tmp == 0 || res_tmp == -1, 14177, 0
+unicodeToUtf8,  res_tmp >= 0 && res_tmp <= 4, 0, 0
+setError,  res_tmp == 0 || res_tmp == -1, 1674, 0
+skipSpaces,  isprint(res_tmp), 0, 0
+pushPrefix,  res_tmp >= 0, 28, 0
+lookupNamespaceId,  res_tmp >= 0, 18, 9
+doOpen,  res_tmp == 0 || res_tmp > 0, 4900, 207
+getFormatterInitialIndentLevel,  res_tmp == 0 || res_tmp == options.initialIndentLevel(), 735, 0
+lookupPredefinedId, e_PREDEF_MAX, 0, 0
+encodeCharArray,  res_tmp == encodeSimpleValue(formatter$ base64String$ encoderOptions), 650, 0
+decodeObject,  res_tmp == 0 || res_tmp == -1 || res_tmp == -2 || res_tmp == -3 || res_tmp == -4, 1137, 0
+decodeArray,  res_tmp == 0 || res_tmp == -4 || res_tmp == -1 || res_tmp == -2, 3002, 0
+extractValue,  res_tmp == 0 || res_tmp == -1, 1646, 0
+encodeArray,  res_tmp == 0, 466, 0
+encodeObject,  res_tmp == 0 || res_tmp != 0, 599, 0
+decode,  res_tmp == 0 || res_tmp == -1 || res_tmp == -2 || res_tmp == -3, 1719, 0
+getUnquotedString,  res_tmp == 0, 57, 48
+fromAsciiCaseless,  res_tmp == 0 || res_tmp == -1, 87, 0
+getRecordPtr,  res_tmp != NULL && res_tmp->fixedFields().getFileName() == fileName && res_tmp->fixedFields().getLineNumber() == lineNumber, 0, 0
+format,  res_tmp == -1 || res_tmp >= 0, 1753, 0
+hash,  0 <= res_tmp && res_tmp < size, 69, 0
+deregisterObserver,  res_tmp == 0 || res_tmp == 1, 25, 0
+findObserver,  res_tmp.get() == NULL || res_tmp->getName() == observerName, 0, 0
+getDefaultFormat,  res_tmp.size() == 256, 0, 0
+parse,  res_tmp == 0 || res_tmp == -1, 7059, 0
+setFormat,  res_tmp == -1 || res_tmp == 0, 71333, 0
+fromAscii,  res_tmp == 0 || res_tmp == -1, 45, 0
+setLevels,  res_tmp == 0 || res_tmp == -1, 0, 0
+hash,  0 <= res_tmp && res_tmp < size, 134790, 0
+addCategory,  res_tmp == 0, 18, 27
+defaultRecordBufferSize,  true, 7, 0
+hash,  0 <= res_tmp && res_tmp < size, 906466, 0
+getErrorCode,  res_tmp >= 0, 1, 0
+getTimestampSuffix,  res_tmp.length() == 16, 0, 25
+openLogFile,  res_tmp == 0 || res_tmp == -1, 41, 0
+computeNextRotationTime,  true, 20, 0
+addRule,  res_tmp == -1 || res_tmp == -2 || d_ruleAddresses[res_tmp] != NULL, 101, 0
+ruleId,  res_tmp == -1 || res_tmp >= 0, 9, 0
+hash,  res_tmp >= 0 && res_tmp < size, 61, 0
+addCollector,  res_tmp == 0 || res_tmp == 1, 19, 0
+getZoneinfoId,  res_tmp == 0 || res_tmp == -1, 108, 0
+lookupTimeZone,  res_tmp == 0 || res_tmp != 0, 146, 0
+findTransitionWithDstFlag,  res_tmp == timeZone.endTransitions(, 0, 0
+convertUtcToLocalTime,  res_tmp == 0 || res_tmp != 0, 55, 311
+configureImp, loadLocalTimePeriodForUtc(privateLocalTimePeriod()$ timezone$ utcDatetime), 0, 0
+validateTimeZoneId,  res_tmp == -1 || res_tmp == -2 || res_tmp == 0, 403, 0
+loadTimeZoneImpl,  res_tmp == 0 || res_tmp != 0, 13, 0
+loadTimeZoneFilePath,  res_tmp == 0, 112, 33
+readRawTz,  res_tmp == 0 || res_tmp == -1 || res_tmp == -2, 427, 0
+decode32,  res_tmp == BSLS_BYTEORDER_BE_U32_TO_HOST(*(int*)address), 12608, 0
+readVersion2Or3FormatData,  res_tmp == 0 || res_tmp != 0, 435, 0
+read,  res_tmp >= 0, 348, 30
+convertUtcToLocalTime, k_OUT_OF_RANGE, 0, 0
+addInterval,  result != NULL, 14, 0
+constraint,  res_tmp != NULL, 24714, 0
+validate,  res_tmp == 0 || res_tmp != 0, 1919671, 0
+parseEnvironmentVariable,  res_tmp >= 0, 64, 159
+findName,  res_tmp == -1 || (res_tmp >= 0 && res_tmp < d_options.size()), 384473, 0
+index,  res_tmp == -1 || res_tmp >= 0, 19816, 0
+calculateNumberOfUnitsToDrain,  res_tmp >= 0, 12851756, 0
+calculateTimeToSubmit,  res_tmp >= 0, 386510, 0
+registerHandler,  res_tmp == 0 || res_tmp == 1, 75, 0
+calculateTimeToSubmit,  res_tmp >= currentTime, 2707, 689
+addGeneralPublisher,  res_tmp == 0 || res_tmp == -1, 345, 0
+registerCollectionCallback,  res_tmp >= 0, 124816, 0
+registerCollectionCallback,  res_tmp != NULL, 0, 2
+setFormat,  res_tmp == 0 || res_tmp == -1, 50, 0
+insertId,  res_tmp.first != NULL && res_tmp.second == true, 2962, 257
+numMetrics,  res_tmp >= 0, 104, 0
+makeInvalidInterval,  res_tmp.isValid() == false, 0, 0
+calculateNextBufferSize,  0 < res_tmp && res_tmp <= d_maxBufferSize, 0, 0
+absLevel,  res_tmp == d_level, 115, 0
+getNumDeletes,  true, 0, 0
+getNumDeletes,  true, 0, 0
+getProcessName,  res_tmp == 0 || res_tmp != 0, 0, 0
+compare,  res_tmp == 0 || res_tmp != 0, 0, 0
+getComponentName,  res_tmp == 0, 0, 0
+vsnprintf_alwaysCount,  res_tmp >= 0, 0, 0
+vsnprintf_allocate,  res_tmp >= -1, 0, 0
+lagTime,  res_tmp >= 0, 76, 0
+convertToSchedulingPriority, e_SCHED_MAX, 0, 0
+addThreadGroup,  res_tmp == addThreadGroup(runFunction$ numThreads$ busyWorkAmount$ InitializeThreadFunction()$ CleanupThreadFunction()), 0, 5
+nativeDefaultThreadStackSizeImp,  1 <= res_tmp && res_tmp <= INT_MAX, 0, 0
+currentCount,  res_tmp >= 0, 14980, 0
+message,  true, 0, 0
+message,  not res_tmp.empty(), 0, 0
+rotl,  true, 0, 0
+u8to64_le,  res_tmp == BSLS_BYTEORDER_LE_U64_TO_HOST(BSLS_BYTEORDER_LE_U64_TO_HOST(*((const u64*)p))), 0, 0
+rawLt64,  (res_tmp & ((1ULL << numBits) - 1)) == (1ULL << numBits) - 1, 1714, 0
+bound,  low <= res_tmp && res_tmp <= high, 5269502, 3459826
+divmod10,  res_tmp == ((v->high() * 2^64 + v->low()) % 10), 220, 1675378
+canonicalizeDecimalValueClassification,  res_tmp == FP_NAN || res_tmp == FP_INFINITE || res_tmp == FP_ZERO || res_tmp == FP_NORMAL || res_tmp == FP_SUBNORMAL || res_tmp == -1, 0, 0
+getNewCapacity,  res_tmp >= length && ((res_tmp - 1) & res_tmp) == 0, 42, 300
+getNewCapacity,  res_tmp >= size && res_tmp <= MAX_BYTES, 70, 0
+getNewCapacity,  res_tmp >= size && res_tmp <= k_MAX_BYTES, 39, 0
+getNewCapacity,  res_tmp >= size && res_tmp <= MAX_BYTES, 42, 0
+calculateMaxAlignedSize,  res_tmp >= totalSize, 201238, 0
+roundUp,  res_tmp >= x && res_tmp < x + y, 258, 0
+alignedAllocationSize,  res_tmp >= size, 43426, 0
+initAlwaysUnavailable,  true, 53600, 0
+expand,  res_tmp >= size, 61, 0
+roundUp,  res_tmp >= x && res_tmp < x + y, 1321, 0
+computeInternalBlockSize,  res_tmp >= blockSize + HEADER_LENGTH, 1321, 0
+getSystemPageSize,  res_tmp > 0, 24239, 0
+systemProtect,  res_tmp == 0, 12121, 0
+systemUnprotect,  res_tmp == 0, 12118, 0
+findPool,  res_tmp >= 0, 89424, 0
+alignedAllocationSize,  res_tmp >= size, 180, 0
+alignedAllocationSize,  res_tmp >= size, 114, 0
+findPool,  res_tmp >= 0, 84775, 0
+fileSize,  res_tmp >= 0, 421, 0
+switchToInputMode,  res_tmp == 0 || res_tmp == -1, 341, 0
+underflow, eof(), 0, 0
+appendIfValid,  true, 4209, 0
+makeCanonicalName,  true, 2, 0
+substr,  res_tmp.data() != NULL && res_tmp.size() <= str.size() && res_tmp.size() >= 0, 7625, 0
+getProcessId,  res_tmp >= 0, 924, 0
+makeDirectory, k_ERROR_PATH_NOT_FOUND, 0, 0
+u_removeContentsOfTree,  res_tmp == 0 || res_tmp == -1 || res_tmp == -2 || res_tmp == -7 || res_tmp == -9 || res_tmp == -10 || res_tmp == -11, 589, 0
+getPid,  res_tmp >= 0, 36, 0
+getProcessId,  res_tmp >= 0, 36, 0
+convert,  res_tmp >= 0, 8091, 6
+f1,  true, 4006272, 0
+f1,  true, 2506800, 0
+f2,  true, 4006272, 0
+f2,  true, 2506800, 0
+f3,  true, 3004704, 0
+f3,  true, 2005440, 0
+f4,  true, 3004704, 0
+f4,  true, 2005440, 0
+convert,  res_tmp == 0, 546, 65279
+getLengthInUse,  res_tmp == (length % 64), 793753, 0
+setSeekFailure,  res_tmp == -1, 9, 0
+overflow, eof(), 0, 0
+rotateLeft,  true, 7018368, 0
+bitwiseConditional,  true, 626640, 0
+bitwiseMajority,  (res_tmp & x) == (res_tmp & y) && (res_tmp & x) == (res_tmp & z), 0, 626640
+f,  x ^ y ^ z, 0, 0
+pack,  true, 501312, 0
+utf8ToUcs2,  res_tmp == k_SUCCESS || res_tmp == k_OUTPUT_BUFFER_TOO_SMALL, 651337, 9425368
+compare, swapBytes(uc), 0, 0
+utf8Size,  res_tmp == 1 || res_tmp == 2 || res_tmp == 3 || res_tmp == 4, 236227, 0
+get2ByteValue,  true, 15294424, 0
+get3ByteValue,  true, 14902569, 0
+get4ByteValue,  true, 14955058, 0
+validateAndCountCodePoints,  res_tmp >= 0, 194721, 473138
+validateAndCountCodePoints,  res_tmp >= 0, 7327998, 2032732
+getLineAndColumnNumber,  res_tmp == 0 || res_tmp == -100, 479, 0
+lookaheadContinuations,  res_tmp <= n, 378665, 0
+endConvert,  res_tmp == 0 || res_tmp == -1, 1036, 0
+numActiveThreads,  res_tmp >= 0, 52, 0
+advanceTime,  res_tmp > 0, 4, 0
+currentTime,  true, 15, 0
+start,  true, 87, 0
+nextPendingEventTime,  res_tmp >= 0, 21, 0
+advanceTime,  res_tmp > 0, 4, 0
+now,  true, 3, 0
+enqueueJob,  res_tmp >= 0, 22427, 4
+start,  res_tmp == 0 || res_tmp == -1, 129, 0
+createQueue,  res_tmp >= 0, 7549, 0
+invalidThreadId,  res_tmp == 0, 0, 228
+advanceTime,  res_tmp > d_currentTime, 0, 16
+currentTime,  true, 36, 0
+returnZero,  res_tmp == 0, 98, 0
+chooseNextEvent,  res_tmp >= 0, 2253, 0
+cancelEvent, e_INVALID || res_tmp == 0, 0, 0
+advanceTime,  res_tmp > 0, 16, 0
+now,  true, 5, 0
+nextPermit,  res_tmp == 0 || res_tmp == -1, 62, 0
+findFirstNonDigit, isDigit(*res_tmp), 0, 0
+expandBufferForLargeValue,  res_tmp == 0 || res_tmp == -1, 3153, 0
+value,  res_tmp == 0 || res_tmp == -1, 1612, 0
+readObject,  res_tmp == 0 || (res_tmp != 0 && error->message != ""), 0, 0
+readArray,  res_tmp == 0 || (res_tmp != 0 && error->message != ""), 0, 0
+readScalar,  res_tmp == 0 || (res_tmp != 0 && error->message() != ""), 873, 0
+read,  res_tmp == 0 || res_tmp == -1, 788, 35
+circularDifference,  0 <= res_tmp && res_tmp < modulo, 554484, 11
+reservePushIndex,  res_tmp == e_SUCCESS || res_tmp == e_QUEUE_FULL || res_tmp == e_DISABLED_QUEUE, 1763078, 0
+length,  res_tmp >= 0 && res_tmp <= d_capacity, 2131036, 0
+charToHex,  res_tmp == 0 && *hex >= 0 && *hex <= 15, 0, 0

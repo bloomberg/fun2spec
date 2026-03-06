@@ -1,0 +1,2 @@
+{'function name': 'getTraceBufferLength', 'true': 362, 'false': 0, 'return_code': 0, 'file': 'analysis_code/bde/groups/bal/balst/balst_stacktracetestallocator.cpp', 'postcondition': ' res_tmp >= specifiedMaxRecordedFrames && res_tmp % k_PTRS_PER_MAX == 0', 'offset': 2697, 'return_type': 'Int'}
+{'function name': 'checkBlockHeader', 'true': 208473, 'false': 0, 'return_code': 0, 'file': 'analysis_code/bde/groups/bal/balst/balst_stacktracetestallocator.cpp', 'postcondition': ' res_tmp == 0 || res_tmp == -1', 'offset': 6169, 'return_type': 'Int'}
