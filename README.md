@@ -10,6 +10,8 @@ Two case studies are presented: BDE (The Bloomberg Development Environment libra
 
 These projects contain several millions of lines of code and constitute great experiments showcasing what can be done with fun2spec.
 
+We have documented fun2spec experiments in our paper: [Fun2spec: Code Contract Synthesis At Scale](fun2spec_FSE2026.pdf) published at FSE'26
+
 ## :bulb: Installation
 
 ### BDE Installations
