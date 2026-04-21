@@ -6,11 +6,11 @@ fun2spec is a new tool used to automatically infer code contracts for large C++ 
 
 In particular, fun2spec uses large language models (LLMs) to generate postcondition specifications for C++ functions.
 
-Two case studies are presented: BDE (The Bloomberg Development Environment library) and Blazing MQ (an open source message queue solution developed at Bloomberg).
+Two case studies are presented: BDE (the Bloomberg Development Environment library) and BlazingMQ (an open source message queue solution developed at Bloomberg).
 
 These projects contain several millions of lines of code and constitute great experiments showcasing what can be done with fun2spec.
 
-We have documented fun2spec experiments in our paper: [Fun2spec: Code Contract Synthesis At Scale](fun2spec_FSE2026.pdf) published at FSE'26
+We have documented fun2spec experiments in our paper: [Fun2spec: Code Contract Synthesis At Scale](fun2spec_FSE2026.pdf), which has been accepted for publication at [FSE 2026](https://conf.researchr.org/track/fse-2026/fse-2026-industry-papers) in July.
 
 ## :bulb: Installation
 
