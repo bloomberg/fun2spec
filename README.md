@@ -1,7 +1,14 @@
 # fun2spec
 
 ## ℹ️ About
-fun2spec uses large language models (LLMs) to generate postcondition specifications for C++ functions.
+
+fun2spec is a new tool used to automatically infer code contracts for large C++ libraries.
+
+In particular, fun2spec uses large language models (LLMs) to generate postcondition specifications for C++ functions.
+
+Two case studies are presented: BDE (The Bloomberg Development Environment library) and Blazing MQ (an open source message queue solution developed at Bloomberg).
+
+These projects contain several millions of lines of code and constitute great experiments showcasing what can be done with fun2spec.
 
 ## :bulb: Installation
 
